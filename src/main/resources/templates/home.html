@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Пузырьковая сортировка</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <form action="/sort" method="post">
+        <fieldset>
+            <legend>Пузырьковая сортировка</legend>
+            <p><label for="number">Введите элементы массива</label><input type="text" id="number" name="number"></p>
+        </fieldset>
+        <p><input type="submit" value="Начать"></p>
+    </form>
+    <p th:text="${result}"/>
+</body>
+</html>
